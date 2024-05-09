@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Comics_Gestion
+namespace dominio
 {
-    internal class Comic
+    public class Comic
     {
         public string Serie { get; set; }
         public string Titulo { get; set; }
