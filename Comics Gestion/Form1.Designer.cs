@@ -39,6 +39,7 @@
             this.pbxImagen.Location = new System.Drawing.Point(597, 22);
             this.pbxImagen.Name = "pbxImagen";
             this.pbxImagen.Size = new System.Drawing.Size(189, 279);
+            this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxImagen.TabIndex = 0;
             this.pbxImagen.TabStop = false;
             // 
@@ -49,6 +50,7 @@
             this.dgvComics.Name = "dgvComics";
             this.dgvComics.Size = new System.Drawing.Size(540, 278);
             this.dgvComics.TabIndex = 1;
+            this.dgvComics.SelectionChanged += new System.EventHandler(this.dgvComics_SelectionChanged);
             // 
             // Form1
             // 

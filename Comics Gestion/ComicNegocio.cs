@@ -18,7 +18,7 @@ namespace Comics_Gestion
 
             try
             {
-                conexion.ConnectionString = "SERVER vfd.=\\SQLEXPRESS; DATABASE=DISCOS_DB; integrated security = true";
+                conexion.ConnectionString = "SERVER=.\\SQLEXPRESS; DATABASE=DISCOS_DB; integrated security = true";
                 comando.CommandType = System.Data.CommandType.Text; 
                 comando.CommandText = "select E.Descripcion Serie, D.Titulo, CantidadCanciones Volumen, UrlImagenTapa from estilos E, discos D";
                 comando.Connection = conexion;
@@ -33,6 +33,7 @@ namespace Comics_Gestion
                     aux.Titulo = (string)Lector["Titulo"];
                     aux.Volumen = (int)Lector["Volumen"];
                     aux.UrlImagen = (string)Lector["UrlImagenTapa"];
+                    lista.Add(aux);
                 }
                 return lista;
             }
